@@ -1,0 +1,8 @@
+{
+  "name": "Lab 02 Client - TCP Ports",
+  "image": "rc2526-lab01",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ]
+}
