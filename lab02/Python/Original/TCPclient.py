@@ -5,7 +5,7 @@
 """
 from socket import *
 
-serverName = "localhost"            # server name
+serverName = "server"            # server name
 serverPort = 12000                  # socket server port number
 sockBuffer = 2048                   # socket buffer size
 
