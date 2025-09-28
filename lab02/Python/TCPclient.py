@@ -25,9 +25,11 @@ def main():
     with open(sys.argv[4], "wb") as f:
         while True:
             data = clientSocket.recv(sockBuffer)
-            print("Received from server: ", data.decode())
             if data == b"__END__":
+                print("File has been received.")
                 break
+            else:
+                print("Receiving...")
             f.write(data)
     
     clientSocket.close()            # close TCP connection

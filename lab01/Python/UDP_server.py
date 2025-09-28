@@ -6,7 +6,7 @@ localPort   = 20001
 bufferSize  = 1024
 chunkSize  = 2048
 
-files = [f for f in os.listdir("..") if os.path.isfile(f)]
+files = [f for f in os.listdir("..") if os.path.isfile(os.path.join("..", f))]
 
 for f in files:
     print(f)
